@@ -25,7 +25,7 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     return new Scaffold(
         // backgroundColor: Image.asset('assets/images/back.png'),
-        backgroundColor: Colors.amberAccent,
+        backgroundColor: Colors.amber,
         body: Container(
           alignment: Alignment.center, // use aligment
           child: Image.asset('assets/images/splash.gif',
