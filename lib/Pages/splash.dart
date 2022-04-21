@@ -18,27 +18,18 @@ class _SplashState extends State<Splash> {
   _navigatetohome() async {
     await Future.delayed(Duration(milliseconds: 2000), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => MapScreen()));
+        context, MaterialPageRoute(builder: (context) => HomePage()));
   }
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        // backgroundColor: Image.asset('assets/images/back.png'),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.transparent,
         body: Container(
+          decoration: BoxDecoration(),
           alignment: Alignment.center, // use aligment
           child: Image.asset('assets/images/splash.gif',
               height: 200, width: 200, fit: BoxFit.cover),
         ));
-
-    // Container(
-    //     height: double.infinity,
-    //     width: double.infinity,
-    //     child: Image.asset(
-    //       'assets/images/splash.gif',
-    //       width: 100,
-    //       height: 50,
-    //     )));
   }
 }
